@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D21312;
+    padding: 10px 20px;
+    width: 98%;
+}
+
+.nav-bar p {
+    color: whitesmoke;
+    margin-right: auto; 
+    font-size: 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+main {
+    background-color: #070A52;
+    height: 602px;
+} 
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #ED2B2A, #070A52);
+}
+
+section:nth-child(even) {
+    background-color: #070A52;
+}
+
+h1 { 
+    padding-top: 250px;
+    padding-bottom: 20px;
+    padding-left: 430px;
+    color: #ED2B2A;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 400px;
+    padding: 15px 0px 10px 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid #070A52;
+    background-color: whitesmoke;
+}
+
+#s {
+    width: 100px;
+    padding: 15px 0px 10px 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid #070A52;
+    background-color: whitesmoke;
+}
+
+ /* media queries */
+     @media (max-width: 700px) {
+    .nav-bar {
+        padding: 1px;
+        width: 100%;
+    }
+    .nav-bar p {
+        font-size: 12px;
+    }
+    .nav-bar a {
+        font-size: 10px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    h1 {
+        padding-top: 130px;
+        padding-bottom: 10px;
+        padding-left: 170px;
+    }
+    #search {
+        align-items: center;
+    }
+    main {
+        height: 400px;
+    }
+    input {
+        width: 200px;
+        padding: 10px 0px 10px 10px;
+    }
+    #s {
+        width: 80px;
+        padding: 10px 0px 10px 0px;
+    }
+    section {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-bar {
+        padding: 1px;
+        width: 100%;
+    }
+    .nav-bar p {
+        font-size: 5px;
+    }
+    .nav-bar a {
+        font-size: 5px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    h1 {
+        padding-top: 130px;
+        padding-bottom: 10px;
+        padding-left: 80px;
+    }
+    section {
+        font-size: 50px;
+    }
+}
